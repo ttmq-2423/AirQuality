@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_screen">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/MapView"
+        tilesource="Mapnik"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/myRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@drawable/maptab">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:background="@color/white"
+            android:fontFamily="@font/acme"
+            android:text="jedfghj"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_view"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/info"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/custombtn"
+            android:fontFamily="@font/acme"
+            android:text="View"
+            android:textColor="#1799AA"
+            android:textSize="30dp"
+            app:backgroundTint="@null" />
+
+    </RelativeLayout>
+</RelativeLayout>

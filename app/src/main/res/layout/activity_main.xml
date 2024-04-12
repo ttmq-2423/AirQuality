@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroung_home"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/nameApp"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
+        android:paddingLeft="15sp"
+        android:text="UiOT"
+        android:textColor="@color/UioT_color"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/nameApp_HOME"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="359dp"
+        android:fontFamily="@font/akaya_telivigala"
+        android:gravity="center"
+        android:text="Welcome to AirQuality"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold|italic"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_SignIn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameApp_HOME"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/acme"
+        android:text="Sign In"
+        android:textColor="@color/editText"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button_SignUP"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_OR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/acme"
+        android:text="Sign Up"
+        android:textColor="@color/editText"
+        android:textSize="25sp"
+        app:backgroundTint="@null"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_OR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_SignIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/acme"
+        android:text="------- OR -------"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>
